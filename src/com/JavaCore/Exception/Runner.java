@@ -17,6 +17,10 @@ public class Runner {
         } else{
             throw new WrongPasswordException("jidjvidvjdivjd");
         }
+        return (LoginConfirm && PasswordConfirm);
+    }
+
+    public static void main(String[] args) {
         try{
             control("uheufhuefu", "huvhduvhduvhduvd","hvduvhduvhduvhd");
         } catch (WrongLoginException exception){
@@ -24,6 +28,5 @@ public class Runner {
         } catch (WrongPasswordException exception){
             exception.printStackTrace();
         }
-        return (LoginConfirm && PasswordConfirm);
     }
 }
